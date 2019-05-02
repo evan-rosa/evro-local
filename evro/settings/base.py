@@ -217,7 +217,7 @@ TAGGIT_CASE_INSENSITIVE = True
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-BASE_URL = 'https://evro.io'
+BASE_URL = ''
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

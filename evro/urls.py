@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^api-path/', include('rest_framework.urls')),
     url(r'^api/v2/', api_router.urls),
     url(r'^api/contact/', include('contact.api.urls')),
-    re_path('.*', TemplateView.as_view(template_name='index.html')),
+    #re_path('.*', TemplateView.as_view(template_name='index.html')),
 
 
     # For anything not caught by a more specific rule above, hand over to
@@ -47,7 +47,10 @@ if settings.DEBUG:
     from django.conf.urls.static import static
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-    # Serve static and media files from development server
     urlpatterns += staticfiles_urlpatterns()
-    urlpatterns += static('/media/images/',
-                          document_root=os.path.join(settings.MEDIA_ROOT, 'images'))
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
+
+urlpatterns += [
+    re_path('.*', TemplateView.as_view(template_name='index.html')),
+]

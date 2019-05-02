@@ -66,7 +66,7 @@ class About extends React.Component {
 				<MDBContainer className="pb-5">
 					<MDBRow className="pt-5">
 						<MDBCol md="12">
-							<h1 className="h1">About</h1>
+							<h1 className="h1">About Evan</h1>
 							<p className="h5-responsive">{this.state.about_p}</p>
 						</MDBCol>
 					</MDBRow>

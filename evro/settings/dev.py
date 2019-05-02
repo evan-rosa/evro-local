@@ -37,7 +37,9 @@ ALLOWED_HOSTS = [
     "www.evro.io",
     "evro.io",
 ]
-MEDIA_URL = 'https://evro.herokuapp.com/media/'
+MEDIA_URL = '/media/'
+# MEDIA_URL = 'https://evro.herokuapp.com/media/'
+
 # TEMPLATES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates

@@ -64,6 +64,6 @@ class ProjectsPage(Page):
         APIField('project_url'),
         APIField('project_image'),
         APIField('project_image_url', serializer=ImageRenditionField(
-            'fill-1500x1500', source='project_image')),
+            'fill-700x700', source='project_image')),
 
     ]
