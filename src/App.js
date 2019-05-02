@@ -87,11 +87,12 @@ class App extends Component {
 					<main>
 						<Routes />
 					</main>
-					<Widget
+
+					{/* <Widget
 						handleNewUserMessage={this.handleNewUserMessage}
 						title="Welcome to the EvRo.io ChatBot!"
 						subtitle="Ask the EvRo ChatBot anything about Evan Rosa."
-					/>
+					/> */}
 				</div>
 			</Router>
 		);

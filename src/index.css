@@ -323,10 +323,10 @@ svg.react-chart > text {
 @media only screen and (min-width: 992px) {
 	.desk-absolute {
 		position: absolute !important;
-		top: 20rem;
+		top: 27rem;
 	}
 	.desk-margin {
-		margin-bottom: 12rem;
+		margin-bottom: 20rem;
 		position: relative;
 	}
 }

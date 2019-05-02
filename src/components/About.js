@@ -25,8 +25,8 @@ class About extends React.Component {
 		this.getData = this.getData.bind(this);
 	}
 	getData() {
-		const url = `https://evro.herokuapp.com/api/v2/pages/?type=about.AboutPage&fields=*`;
-		const resume = `https://evro.herokuapp.com/api/v2/documents/`;
+		const url = `/api/v2/pages/?type=about.AboutPage&fields=*`;
+		const resume = `/api/v2/documents/`;
 		axios
 			.get(url)
 			.then((res) => {
@@ -54,6 +54,7 @@ class About extends React.Component {
 				});
 			})
 			.catch((error) => this.setState({ error }));
+		console.log(this.state);
 	}
 
 	componentDidMount() {
