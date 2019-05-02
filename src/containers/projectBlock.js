@@ -15,7 +15,7 @@ class ProjectBlock extends React.Component {
 	}
 	getData() {
 		const projectID = this.props.match.params.projectID;
-		const url = `https://evro.herokuapp.com/api/v2/pages/${projectID}/?type=projects.ProjectsPage&fields=*`;
+		const url = `/api/v2/pages/${projectID}/?type=projects.ProjectsPage&fields=*`;
 		axios
 			.get(url)
 			.then((res) => {
@@ -25,6 +25,7 @@ class ProjectBlock extends React.Component {
 				});
 			})
 			.catch((error) => this.setState({ error }));
+
 	}
 
 	componentDidMount() {

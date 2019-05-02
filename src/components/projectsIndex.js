@@ -16,7 +16,7 @@ class ProjectIndexPage extends React.Component {
 		this.getData = this.getData.bind(this);
 	}
 	getData() {
-		const url = `https://evro.herokuapp.com/api/v2/pages/?type=projects.ProjectsPage&fields=*`;
+		const url = `/api/v2/pages/?type=projects.ProjectsPage&fields=*`;
 		axios
 			.get(url)
 			.then((res) => {
